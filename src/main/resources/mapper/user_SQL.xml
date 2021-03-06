@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rms.recipemanagementsystem.service.UserService">
+
+	<!-- 컬럼을 특정 이름으로 binding 시키고 싶을 때 사용  -->
+    <!--
+    <resultMap type="egovframework.example.sample.service.BoardVO" id="boardVO">
+    	<result 	property="seq"		column="SEQ" 		/>          	
+    	<result  	property="userId"	column="USER_ID"	/>       	
+    	<result 	property="title"	column="TITLE" 		/>        	
+    	<result  	property="content"	column="CONTENT"	/>      	
+    	<result 	property="regDt"	column="REG_DT" 	/>
+    	<collection property="fileList" resultMap="fileVO"/>        	
+    </resultMap>  
+    -->
+    
+    
+	<select id="selectAll" parameterType="String" resultType="UserVO">
+		select email from user;
+	</select>
+</mapper>
