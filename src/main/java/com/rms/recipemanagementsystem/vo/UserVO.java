@@ -1,6 +1,7 @@
 package com.rms.recipemanagementsystem.vo;
 
 public class UserVO {
+	
 	private String email;
 	private int password;
 	private int authority;
